@@ -11,10 +11,10 @@ import java.util.Scanner;
  */
 public class ConversorDeMonedas {
 
-    private static Scanner entrada = new Scanner(System.in);
-    private static ConsultarMonedas consulta = new ConsultarMonedas();
-    private static Valoracion valoracion = consulta.buscarValoracion();
-    private static Conversion conversion = new Conversion(valoracion.conversionRates());
+    private static final Scanner entrada = new Scanner(System.in);
+    private static final ConsultarMonedas consulta = new ConsultarMonedas();
+    private static final Valoracion valoracion = consulta.buscarValoracion();
+    private static final Conversion conversion = new Conversion(valoracion.conversionRates());
 
     public static void main(String[] args) {
 
